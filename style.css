@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #3c3c3c;
+}
+.btn-open{
+    
+color: #fff;
+    
+position: absolute;
+    
+top: 50%;
+    
+left: 50%;
+    
+transform: translate(-50%, -50%);
+    
+font-weight: 700;
+    
+font-size: 31px;
+    
+background: #ff4d76;
+    
+width: 423px;
+    
+height: 92px;
+    
+border-radius: 11px;
+    
+display: flex;
+    
+align-items: center;
+    
+justify-content: center;
+    
+padding: 0;
+    
+border: 1px solid #cecece33;
+    
+transition: .4s all ease-in-out;
+}
+.btn-open:hover{
+    color: #fff;
+    box-shadow: 0px 0px 20px 7px #ff4d767d;
+}
+.span-1{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: wheat;
+    border-radius: 50%;
+    position: absolute;
+    top: 37%;
+    left: 39%;
+    animation: animate 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes animate{
+    0%{
+        left: 39%; 
+        background: wheat;
+    }
+    100%{
+        left:60%;
+        background-color: thistle;
+    }
+}
+.span-2{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: wheat;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 37%;
+    right: 39%;
+    animation: anime 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes anime{
+    0%{
+        right: 39%; 
+        background: wheat;
+    }
+    100%{
+        right:60%;
+        background:snow;
+    }
+}
+@media (max-height:600px) and (min-height:0px){
+    .span-1{
+        top: 33%;
+    }
+    .span-2{
+        bottom: 33%;    
+    }    
+}
